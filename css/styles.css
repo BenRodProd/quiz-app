@@ -1,33 +1,61 @@
 * {
   background-color: black;
   color: white;
-  border-radius: 3%;
-}
-body {
+  border-radius: 3px;
   display: flexbox;
   justify-content: center;
+}
+body {
 }
 header {
   display: flex;
   justify-content: center;
 }
 main {
-  border-radius: 5px;
+  border-radius: 3px;
   border-color: white;
   border-style: solid;
 }
+
+p {
+  text-align: center;
+}
+
 .QuestionCard {
-  display: flexbox;
-  justify-content: center;
+  text-align: center;
   margin: 5%;
-  border: 5px solid white;
+  border: 3px solid white;
 }
 .AnswerCard {
   margin: 5%;
-  border: 5px solid white;
+  border: 3px solid white;
 }
 button {
   padding: 3%;
 }
 .tags {
+  display: flex;
+  justify-content: left;
+}
+.tags p {
+  background-color: grey;
+  border: 3px solid white;
+  padding: 1%;
+  margin: 5% 2%;
+}
+footer {
+  display: flexbox;
+
+  justify-content: center;
+}
+nav {
+  border: 3px solid white;
+  display: flex;
+
+  justify-content: space-evenly;
+  bottom: 0;
+  padding: 5% 0%;
+  margin: 2%;
+}
+nav a {
 }
