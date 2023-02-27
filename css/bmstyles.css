@@ -44,13 +44,10 @@ button {
   margin: 5% 2%;
 }
 footer {
+  display: flexbox;
   position: fixed;
   bottom: 0;
-  width: 97%;
-  margin-bottom: 2%;
-}
-
-.end {
+  justify-content: center;
 }
 nav {
   border: 3px solid white;
@@ -59,19 +56,10 @@ nav {
   justify-content: space-evenly;
   bottom: 0;
   padding: 5% 0%;
-  margin: 0;
+  margin: 2%;
 }
 nav a {
 }
 .home {
   background-color: grey;
-}
-.bookmark {
-  position: absolute;
-
-  top: 7%;
-  left: 70%;
-}
-.bookmark button {
-  align-content: center;
 }
