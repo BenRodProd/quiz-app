@@ -4,6 +4,8 @@
   border-radius: 3px;
   display: flexbox;
   justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
 }
 body {
 }
@@ -16,7 +18,9 @@ main {
   border-color: white;
   border-style: solid;
 }
-
+h1 {
+  font-size: 2rem;
+}
 p {
   text-align: center;
 }
@@ -49,7 +53,14 @@ footer {
   width: 97%;
   margin-bottom: 2%;
 }
-
+.picture {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+.pic {
+  width: 40%;
+}
 .end {
 }
 nav {
