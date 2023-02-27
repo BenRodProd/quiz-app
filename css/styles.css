@@ -1,0 +1,33 @@
+* {
+  background-color: black;
+  color: white;
+  border-radius: 3%;
+}
+body {
+  display: flexbox;
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+main {
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+}
+.QuestionCard {
+  display: flexbox;
+  justify-content: center;
+  margin: 5%;
+  border: 5px solid white;
+}
+.AnswerCard {
+  margin: 5%;
+  border: 5px solid white;
+}
+button {
+  padding: 3%;
+}
+.tags {
+}
