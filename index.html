@@ -10,9 +10,11 @@
       <h1>Quiz App</h1>
     </header>
     <section class="QuestionCard">
-      <button name="Bookmark" class="bookmark">Bookmark</button>
+      <button aria-label="Bookmark" class="bookmark">
+        <img src="bookmark-icon.png" alt="Bookmark" />
+      </button>
       <p>Lirum Larum question?</p>
-      <button name="Show Answer" class="answer">Show Answer</button>
+      <button class="answer">Show Answer</button>
       <div class="tags">
         <p>#html</p>
         <p>#flexbox</p>
@@ -23,9 +25,9 @@
   <footer>
     <div class="end">
       <nav>
-        <a name="Current Page" class="home" href="index.html">Home</a>
-        <a name="Link to Bookmark Page" href="bookmarks.html">Bookmarks</a>
-        <a name="Link to Profile page" href="profile.html">Profile</a>
+        <a class="home" href="index.html">Home</a>
+        <a href="bookmarks.html">Bookmarks</a>
+        <a href="profile.html">Profile</a>
       </nav>
     </div>
   </footer>
