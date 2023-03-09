@@ -20,13 +20,7 @@ form.addEventListener("submit", (event) => {
 
   display.innerHTML = `
 <section class="question">
-      <button
-        aria-label="Question Bookmark Button"
-        class="question__button-bookmark notBookmarked"
-        data-js="BookmarkButton"
-      >
-        <img src="bookmark-icon.png" alt="Bookmark" />
-      </button>
+     
       <p>${newQuestionText}</p>
       
       <div class="answer" data-js="answerBox">${newAnswerText}</div>

@@ -9,12 +9,14 @@ a {
   text-decoration: none;
 }
 header {
-  display: flexbox;
+  display: flex;
 
   position: fixed;
   top: 0;
-
-  width: 100%;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  align-items: center;
   justify-content: center;
   z-index: 5;
   border: 3px solid;
