@@ -9,18 +9,22 @@ a {
   text-decoration: none;
 }
 header {
-  display: flexbox;
+  display: flex;
 
   position: fixed;
   top: 0;
-
+  justify-self: center;
+  align-self: center;
   width: 100%;
+  align-items: center;
   justify-content: center;
   z-index: 5;
   border: 3px solid;
 }
 main {
   display: flexbox;
+  width: 100%;
+  justify-content: center;
   margin-top: 25%;
   margin-bottom: 20%;
 }
@@ -137,4 +141,7 @@ fieldset {
   font-size: 0.8rem;
 }
 .bookmark-icon {
+}
+.displayNewCard {
+  border: 2px solid;
 }
