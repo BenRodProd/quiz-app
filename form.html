@@ -9,44 +9,46 @@
     <h1>Quiz App</h1>
   </header>
   <main class="main">
-    <fieldset>
-      <h1>Add a new Quizcard</h1>
-      <form class="newQuestionCard" data-js="newQuestionCard">
-        <h2>Your question:</h2>
-        <textarea
-          maxlength="150"
-          cols="50"
-          rows="4"
-          required
-          class="newQuestionArea"
-          data-js="newQuestionArea"
-        ></textarea>
-        <div class="LettersLeft" data-js="QuestionLettersLeft"></div>
-        <h2>Your answer:</h2>
-        <textarea
-          maxlength="150"
-          cols="50"
-          rows="4"
-          required
-          data-js="newAnswerArea"
-          class="newAnswerArea"
-        ></textarea>
-        <div class="LettersLeft" data-js="AnswerLettersLeft"></div>
-        <h2>Your tags:</h2>
-        <input required type="text" class="newTagInput" />
-        <br />
-        <button data-js="submitButton" class="submitbutton" type="submit">
-          Submit
-        </button>
-      </form>
-    </fieldset>
-    <div class="displayNewCard" data-js="displayNewCard"></div>
-    <section class="question">
-      <div data-js="NewQuestionForm"></div>
-      <div data-js="NewAnswerForm" class="answer"></div>
+    <div class="addMargin">
+      <fieldset>
+        <h1>Add a new Quizcard</h1>
+        <form class="newQuestionCard" data-js="newQuestionCard">
+          <h2>Your question:</h2>
+          <textarea
+            maxlength="150"
+            cols="50"
+            rows="4"
+            required
+            class="newQuestionArea"
+            data-js="newQuestionArea"
+          ></textarea>
+          <div class="LettersLeft" data-js="QuestionLettersLeft"></div>
+          <h2>Your answer:</h2>
+          <textarea
+            maxlength="150"
+            cols="50"
+            rows="4"
+            required
+            data-js="newAnswerArea"
+            class="newAnswerArea"
+          ></textarea>
+          <div class="LettersLeft" data-js="AnswerLettersLeft"></div>
+          <h2>Your tags:</h2>
+          <input required type="text" class="newTagInput" />
+          <br />
+          <button data-js="submitButton" class="submitbutton" type="submit">
+            Submit
+          </button>
+        </form>
+      </fieldset>
+      <div class="displayNewCard" data-js="displayNewCard"></div>
+      <section class="question">
+        <div data-js="NewQuestionForm"></div>
+        <div data-js="NewAnswerForm" class="answer"></div>
 
-      <ul class="question__list-tags" data-js="list-tags"></ul>
-    </section>
+        <ul class="question__list-tags" data-js="list-tags"></ul>
+      </section>
+    </div>
   </main>
   <footer>
     <nav>
