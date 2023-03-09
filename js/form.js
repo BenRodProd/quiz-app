@@ -29,9 +29,17 @@ form.addEventListener("submit", (event) => {
   // answerP.classList.add("")
   NewAnswerDiv.append(answerP);
   const TagsLi = document.createElement("li");
-  TagsLi.innerText = newTagsText;
+  const newTagsTextArray = newTagsText.split(" ");
+  for (let i = 0; i < newTagsTextArray.length; i++) {
+    let liTag = document.createElement("li");
 
-  tagsUl.append(TagsLi);
+    liTag.innerText = newTagsTextArray[i];
+    tagsUl.append(liTag);
+  }
+
+  // TagsLi.innerText = newTagsText;
+
+  // tagsUl.append(TagsLi);
 });
 
 //Show Letters left to input
