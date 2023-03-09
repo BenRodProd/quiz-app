@@ -2,46 +2,55 @@
   background-color: black;
   color: white;
   border-radius: 3px;
-  display: flexbox;
-  justify-content: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.2rem;
 }
-body {
+a {
+  text-decoration: none;
 }
 header {
-  display: flex;
+  display: flexbox;
+
+  position: fixed;
+  top: 0;
+
+  width: 100%;
   justify-content: center;
+  z-index: 5;
+  border: 3px solid;
 }
 main {
-  border-radius: 3px;
-  border-color: white;
-  border-style: solid;
+  display: flexbox;
+  margin-top: 25%;
+  margin-bottom: 20%;
 }
 h1 {
+  text-align: center;
   font-size: 2rem;
+}
+h2 {
 }
 p {
   text-align: center;
 }
 
-.QuestionCard {
+.question {
+  position: relative;
   text-align: center;
   margin: 5%;
+  margin-bottom: 25%;
   border: 3px solid white;
 }
-.AnswerCard {
-  margin: 5%;
-  border: 3px solid white;
-}
-button {
+
+.question__button-bookmark {
   padding: 3%;
 }
-.tags {
+.question__list-tags {
   display: flex;
   justify-content: left;
 }
-.tags p {
+.question__list-tags li {
+  list-style-type: none;
   background-color: grey;
   border: 3px solid white;
   padding: 1%;
@@ -51,7 +60,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 97%;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
+  padding-top: 1%;
 }
 .picture {
   display: flex;
@@ -61,8 +71,7 @@ footer {
 .pic {
   width: 40%;
 }
-.end {
-}
+
 nav {
   border: 3px solid white;
   display: flex;
@@ -72,17 +81,60 @@ nav {
   padding: 5% 0%;
   margin: 0;
 }
-nav a {
-}
-.home {
+
+.current {
   background-color: grey;
 }
-.bookmark {
-  position: absolute;
-
-  top: 7%;
-  left: 70%;
+.question__button-bookmark {
+  position: relative;
+  margin-top: -10%;
+  top: -10%;
+  left: 30%;
 }
-.bookmark button {
+.question__button-bookmark button {
   align-content: center;
+}
+.question__button-bookmark img {
+  width: 10%;
+  height: 40px;
+  object-fit: contain;
+}
+.newCard {
+  position: relative;
+  width: 3%;
+  text-align: center;
+
+  border-radius: 50%;
+  border: 4px solid;
+  font-family: sans-serif;
+  font-size: 23px;
+
+  /* font-weight: bold; */
+}
+.notBookmarked {
+  background-color: black;
+}
+.Bookmarked {
+  background-color: red;
+}
+.answer {
+  border: 2px solid;
+  padding: 10%;
+  margin: 10%;
+}
+.newTagInput {
+  width: 63%;
+}
+.submitbutton {
+  margin: 3% 25%;
+  width: 50%;
+  height: 100px;
+}
+fieldset {
+  border: 3px solid;
+}
+.LettersLeft {
+  font-size: 0.8rem;
+}
+.bookmark-icon {
 }

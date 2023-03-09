@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <title>QUIZ APP</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Quiz App</h1>
+  </header>
+  <main class="main">
+    <fieldset>
+      <h1>Add a new Quizcard</h1>
+      <form class="newQuestionCard" data-js="newQuestionCard">
+        <h2>Your question:</h2>
+        <textarea
+          maxlength="150"
+          cols="50"
+          rows="4"
+          required
+          class="newQuestionArea"
+          data-js="newQuestionArea"
+        ></textarea>
+        <div class="LettersLeft" data-js="QuestionLettersLeft"></div>
+        <h2>Your answer:</h2>
+        <textarea
+          maxlength="150"
+          cols="50"
+          rows="4"
+          required
+          data-js="newAnswerArea"
+          class="newAnswerArea"
+        ></textarea>
+        <div class="LettersLeft" data-js="AnswerLettersLeft"></div>
+        <h2>Your tags:</h2>
+        <input required type="text" class="newTagInput" />
+        <br />
+        <button data-js="submitButton" class="submitbutton" type="submit">
+          Submit
+        </button>
+      </form>
+    </fieldset>
+    <div class="displayNewCard" data-js="displayNewCard"></div>
+  </main>
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="form.html" class="newCard current" data-js="newCard">+</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </footer>
+  <script src="./js/form.js" defer></script>
+</body>
