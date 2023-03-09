@@ -37,9 +37,7 @@ form.addEventListener("submit", (event) => {
     tagsUl.append(liTag);
   }
 
-  // TagsLi.innerText = newTagsText;
-
-  // tagsUl.append(TagsLi);
+  event.target.reset();
 });
 
 //Show Letters left to input
