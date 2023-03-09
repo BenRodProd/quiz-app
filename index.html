@@ -5,30 +5,37 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <header class="header">
+    <h1>Quiz App</h1>
+  </header>
   <main class="main">
-    <header>
-      <h1>Quiz App</h1>
-    </header>
-    <section class="QuestionCard">
-      <button aria-label="Bookmark" class="bookmark">
+    <section class="question">
+      <button
+        aria-label="Question Bookmark Button"
+        class="question__button-bookmark notBookmarked"
+        data-js="BookmarkButton"
+      >
         <img src="bookmark-icon.png" alt="Bookmark" />
       </button>
       <p>Lirum Larum question?</p>
-      <button class="answer">Show Answer</button>
-      <div class="tags">
-        <p>#html</p>
-        <p>#flexbox</p>
-        <p>#css</p>
-      </div>
+      <button data-js="answerButton" class="question__button-answer">
+        Show Answer
+      </button>
+      <div class="answer" data-js="answerBox">LirumLarumAnswer</div>
+      <ul class="question__list-tags">
+        <li>#html</li>
+        <li>#flexbox</li>
+        <li>#css</li>
+      </ul>
     </section>
   </main>
   <footer>
-    <div class="end">
-      <nav>
-        <a class="home" href="index.html">Home</a>
-        <a href="bookmarks.html">Bookmarks</a>
-        <a href="profile.html">Profile</a>
-      </nav>
-    </div>
+    <nav>
+      <a class="current" href="index.html">Home</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="form.html" class="newCard" data-js="newCard">+</a>
+      <a href="profile.html">Profile</a>
+    </nav>
   </footer>
+  <script src="./js/app.js" defer></script>
 </body>
