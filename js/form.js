@@ -17,19 +17,21 @@ form.addEventListener("submit", (event) => {
   const newQuestionText = formElements[0].value;
   const newAnswerText = formElements[1].value;
   const newTagsText = formElements[2].value;
+  const NewAnswerDiv = document.querySelector('[data-js="NewAnswerForm"]');
+  const NewQuestionDiv = document.querySelector('[data-js="NewQuestionForm"]');
+  const tagsUl = document.querySelector('[data-js="list-tags"]');
+  const paragraph = document.createElement("p");
+  // paragraph.classList.add("question");
+  paragraph.innerText = newQuestionText;
+  NewQuestionDiv.append(paragraph);
+  const answerP = document.createElement("p");
+  answerP.innerText = newAnswerText;
+  // answerP.classList.add("")
+  NewAnswerDiv.append(answerP);
+  const TagsLi = document.createElement("li");
+  TagsLi.innerText = newTagsText;
 
-  display.innerHTML = `
-<section class="question">
-     
-      <p>${newQuestionText}</p>
-      
-      <div class="answer" data-js="answerBox">${newAnswerText}</div>
-      <ul class="question__list-tags">
-        <li>${newTagsText}</li>
-        
-      </ul>
-    </section>
-    `;
+  tagsUl.append(TagsLi);
 });
 
 //Show Letters left to input
